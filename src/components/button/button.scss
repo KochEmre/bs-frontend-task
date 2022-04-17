@@ -1,0 +1,25 @@
+.button-style{
+    width: 220px;
+    height: 40px;
+    background-color: #2ecc71;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #60e698;
+        color: #000000b0;
+
+    }
+
+    &:disabled {
+        pointer-events: none;
+        background-color: #64646414;
+        color: #64646480;
+      }
+    
+}

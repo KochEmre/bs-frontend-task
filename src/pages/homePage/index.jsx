@@ -3,7 +3,9 @@ import "./homePage.scss"
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+      homepage
+    </div>
   )
 }
 

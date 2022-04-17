@@ -1,8 +1,21 @@
+@font-face {
+  font-family: 'novecento';
+  src: local('novecento'), url(./assets/fonts/novecento.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'myriad';
+  src: local('myriad'), url(./assets/fonts/MyriadPro-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: local('helvetica'), url(./assets/fonts/helveticaneue.woff) format('woff');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "novecento", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

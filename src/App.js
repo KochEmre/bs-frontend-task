@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Page404 from "./pages/404Page";
 import AboutPage from "./pages/aboutPage";
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/about" element={<AboutPage/>} />
         <Route path="*" element={<Page404 />} />
       </Routes>
+      <Footer/>
     </div>
 
   );
