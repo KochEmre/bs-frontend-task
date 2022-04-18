@@ -1,0 +1,89 @@
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .filter-viewtype-container {
+        width: 100%;
+        padding: 44px 0 48px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: hidden;
+        text-transform: uppercase;
+
+        .filter-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            span {
+                text-decoration: none;
+                color: #a5a5a5;
+                cursor: pointer;
+
+                &:after {
+                    content: "/";
+                    margin: 0 10px;
+                }
+
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .viewtype-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            svg {
+                width: 16px;
+                height: 16px;
+                margin: 5px;
+                fill: #737373;
+            }
+
+            .active {
+                fill: #2ecc71;
+            }
+
+            &:hover {
+                fill: #2ecc71;
+            }
+        }
+    }
+
+
+    .grid-wrapper {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+
+        div {
+            height: 50px;
+            background-color: blue;
+        }
+    }
+
+    .list-wrapper {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+
+        div {
+            width: 100%;
+            height: 50px;
+            background-color: blue;
+        }
+    }
+
+}
