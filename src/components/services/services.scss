@@ -1,0 +1,29 @@
+.tab-background {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: #efefef;
+    z-index: -1;
+}
+.service-tab-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .service-tab-item{
+        height: 200px;
+        width: 25%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        text-transform: uppercase;
+    
+        &:hover{
+            background-color: #dadada;
+    
+        }
+    }
+}
