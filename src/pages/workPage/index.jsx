@@ -9,7 +9,7 @@ const WorkPage = () => {
     return (
         <Fragment>
             <PageTitle title="Check Out What I can Do" />
-            <div className="content-container">
+            <div className="work-container">
                 <PortFolioViewer/>
             </div>
         </Fragment>

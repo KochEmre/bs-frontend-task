@@ -8,7 +8,7 @@ const AboutPage = () => {
   return (
     <Fragment>
       <PageTitle title="ABOUT MY BUSINESS" />
-      <div className="content-container">
+      <div className="about-container">
         <div className="flex-container">
           <img src={AboutImage} alt="About" width={380} height={260} />
           <div className="column-container">

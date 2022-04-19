@@ -1,0 +1,138 @@
+@mixin respond($breakpoint) {
+    @if($breakpoint==large) {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==medium) {
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==small) {
+        @media (max-width: 450px) {
+            @content
+        }
+    }
+}
+
+.home-container {
+    position: relative;
+    width: 100%;
+
+    .banner-container {
+        background-image: url('./../../assets/images/banner-background.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65vw;
+
+        @include respond(large) {
+            height: 75vw;
+        }
+
+        @include respond(medium) {
+            height: 100vw;
+        }
+
+        @include respond(small) {
+            height: 120vw;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 940px;
+            width: 95%;
+            margin-bottom: 5%;
+
+            @include respond(large) {
+                margin-bottom: 0;
+            }
+
+            @include respond(medium) {
+                margin-top: 5%;
+                margin-bottom: 0;
+            }
+
+            @include respond(small) {
+                margin-top: 10%;
+                margin-bottom: 0;
+            }
+
+            .devices {
+                width: 80%;
+
+                @include respond(medium) {
+                    width: 90%;
+                }
+
+                @include respond(small) {
+                    width: 100%;
+                }
+
+            }
+
+            .callout-container {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                @include respond(large) {
+                    margin-top: 10px;
+                }
+
+                @include respond(medium) {
+                    margin-top: 0;
+                }
+
+                @include respond(small) {
+                    margin-top: 0;
+                }
+
+                p {
+                    width: 75%;
+                    height: 62px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #aeadad;
+                    font-family: "myriad";
+                    text-align: center;
+
+                    @include respond(large) {
+                        width: 85%;
+                    }
+
+                    @include respond(medium) {
+                        width: 90%;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    @include respond(small) {
+                        width: 95%;
+                    }
+                }
+                button{
+
+                    @include respond(medium) {                  
+                        width: 180px;
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
+}

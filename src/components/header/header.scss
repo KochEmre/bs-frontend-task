@@ -1,3 +1,22 @@
+@mixin respond($breakpoint) {
+    @if($breakpoint==large) {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==medium) {
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==small) {
+        @media (max-width: 450px) {
+            @content
+        }
+    }
+}
 .header-container {
     max-width: 940px;
     width: 95%;
@@ -13,6 +32,13 @@
         justify-content: space-between;
         padding: 31px 0;
         border-bottom: 1px solid #dadada;
+
+        @include respond(small) {
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px 0;
+            gap: 10px;
+        }
 
         .icon-container {
             display: flex;
@@ -107,6 +133,19 @@
         align-items: center;
         gap: 38px;
 
+        @include respond(large) {
+            gap: 34px;
+        }
+
+        @include respond(medium) {
+            gap: 30px;
+        }
+
+        @include respond(small) {
+            gap: 24px;
+            justify-content: center;
+        }
+
             a {
                 margin: 30px 0;
                 cursor: pointer;
@@ -115,6 +154,15 @@
                 font-size: 18px;
                 color: #737373;
                 font-weight: bold;
+
+                @include respond(medium) {
+                    font-size: 16px;
+                    margin: 26px 0;
+                }
+        
+                @include respond(small) {
+                    margin: 22px 0;
+                }
 
                 &:hover,
                 &.active {
