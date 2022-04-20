@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .title-container{
     width: 100vw;
     height: 100px;
@@ -6,6 +8,12 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+
+    @include respond(medium) {
+    }
+
+    @include respond(small) {
+    }
 
     .title-wrapper{
         max-width: 940px;
