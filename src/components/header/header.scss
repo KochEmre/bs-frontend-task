@@ -162,6 +162,8 @@
         
                 @include respond(small) {
                     margin: 22px 0;
+                    font-size: 14px;
+
                 }
 
                 &:hover,

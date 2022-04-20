@@ -1,3 +1,23 @@
+@mixin respond($breakpoint) {
+    @if($breakpoint==large) {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==medium) {
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==small) {
+        @media (max-width: 450px) {
+            @content
+        }
+    }
+}
+
 .button-style{
     width: 220px;
     height: 40px;
@@ -10,6 +30,25 @@
     overflow: hidden;
     border: 0;
     cursor: pointer;
+
+    @include respond(large) {                  
+        width: 200px;
+        font-size: 12px;
+        line-height: 16px;
+        height: 38px;
+    }
+    @include respond(medium) {                  
+        width: 180px;
+        font-size: 10px;
+
+    }
+
+    @include respond(small) {                  
+        width: 160px;
+        height: 36px;
+        font-size: 10px;
+
+    }
 
     &:hover {
         background-color: #60e698;

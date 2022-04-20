@@ -1,3 +1,22 @@
+@mixin respond($breakpoint) {
+    @if($breakpoint==large) {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==medium) {
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==small) {
+        @media (max-width: 450px) {
+            @content
+        }
+    }
+}
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -11,6 +30,12 @@
         background-color: #322f2f;
         align-items: center;
         justify-content: center;    
+        @include respond(medium) {
+            height: 120px;
+        }
+        @include respond(small) {
+            height: 100px;
+        }
 
         .footer-title-wrapper {
             max-width: 940px;
@@ -26,6 +51,17 @@
                 font-size: 24px;
                 color: #efefef;
                 font-weight: bold;
+                padding-right: 8px;
+                
+                @include respond(large) {
+                    font-size: 20px;
+                }
+                @include respond(medium) {
+                    font-size: 18px;
+                }
+                @include respond(small) {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -33,7 +69,7 @@
     .footer-bottom-container {
         max-width: 940px;
         width: 95%;
-        padding: 33px 0 28px;
+        padding: 33px 0 28px 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -43,9 +79,19 @@
         font-weight: bold;
         font-size: 12px;
 
+        @include respond(medium) {
+            padding: 5px 0 5px 0;
+            font-size: 8px;
+        }
+  
+
         small {
             color: #a5a5a5;
             font-size: 12px;
+            @include respond(medium) {
+                font-size: 8px;
+                padding-right: 4px;
+            }       
         }
 
         .navigation-container {

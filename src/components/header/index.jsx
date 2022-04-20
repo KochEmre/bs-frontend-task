@@ -6,8 +6,7 @@ import { ReactComponent as GooglePlus } from '../../assets/icons/google-plus.svg
 import { ReactComponent as Pinterest } from '../../assets/icons/pinterest.svg';
 import { ReactComponent as RSS } from '../../assets/icons/rss.svg';
 import { ReactComponent as Twitter } from '../../assets/icons/twitter.svg';
-import { ReactComponent as Logo } from '../../assets/icons/logo.svg';
-
+import Logo from "../../assets/images/logo.png"
 import "./header.scss"
 
 const Header = () => {
@@ -17,7 +16,8 @@ const Header = () => {
         <div className="header-container">
             <div className="logo-icon-container">
                 <Link className='logo-container' to='/'>
-                    <Logo className='logo' />
+                    <img src={Logo} alt="Logo"/>
+
                 </Link>
                 <div className="icon-container">
                     <div className="icon-wrapper" id="twitter">

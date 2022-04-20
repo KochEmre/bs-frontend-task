@@ -1,3 +1,23 @@
+@mixin respond($breakpoint) {
+    @if($breakpoint==large) {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==medium) {
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==small) {
+        @media (max-width: 450px) {
+            @content
+        }
+    }
+}
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -21,6 +41,12 @@
         font-family: "Novecentowide";
         text-transform: uppercase;
         margin: 50px 0 24px 0;
+
+        @include respond(large) {
+            margin: 25px 0 15px 0;
+        }
+
+    
     }
 
     .flex-container{
@@ -28,6 +54,22 @@
         flex-direction: row;
         gap: 29px;
 
+        @include respond(large) {
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+
+        }
+        
+        img{
+            @include respond(large) {
+                margin-bottom: 40px;
+            }
+            @include respond(medium) {
+                margin-bottom: 30px;
+            }
+
+        }
         .column-container{
             display: flex;
             flex-direction: column;

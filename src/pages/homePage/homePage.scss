@@ -122,13 +122,6 @@
                         width: 95%;
                     }
                 }
-                button{
-
-                    @include respond(medium) {                  
-                        width: 180px;
-                    }
-
-                }
             }
 
         }
