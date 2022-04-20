@@ -1,0 +1,91 @@
+@import "../..//styles/global.scss";
+
+.video-section-container {
+    width: 100vw;
+    display: flex;
+    background-color: #efefef;
+    align-items: center;
+    justify-content: center;
+
+    .video-section-wrapper {
+        margin: 40px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 940px;
+        width: 95%;
+        overflow: hidden;
+        gap: 28px;
+
+        @include respond(medium) {
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .video-preview-wrapper {
+            position: relative;
+            left: 0;
+            right: 0;
+            width: 380px;
+            height: 240px;
+
+            .video-preview {
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+            .play-icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                cursor: pointer;
+            }
+        }
+
+        .section-descriptions-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+
+            @include respond(medium) {
+                align-items: center;
+                justify-content: center;
+            }
+
+            @include respond(small) {}
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+                color: #8a8888;
+                font-family: "helvetica";
+                text-align: start;
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: 24px;
+                color: #8a8888;
+                font-weight: bold;
+                font-family: "Novecentowide";
+                text-transform: uppercase;
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+.player-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    max-width: 32rem;
+    min-height: 200;
+}
