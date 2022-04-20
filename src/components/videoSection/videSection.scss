@@ -1,4 +1,6 @@
 @import "../..//styles/global.scss";
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
 
 .video-section-container {
     width: 100vw;
@@ -6,6 +8,11 @@
     background-color: #efefef;
     align-items: center;
     justify-content: center;
+    // margin-top: -8%;
+
+    // @include respond(x-large) {
+    //     margin-top: 0;
+    // }
 
     .video-section-wrapper {
         margin: 40px 0;

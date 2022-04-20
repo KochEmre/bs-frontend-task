@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import "./videSection.scss"
 import VideoPreview from "./../../assets/images/video-player-placeholder.png"
 import PlayIcon from "./../../assets/images/play-icon.png"
+import ModalVideo from 'react-modal-video'
+
 
 const VideoSection = () => {
 	const [isOpen, setOpen] = useState(false)
@@ -35,7 +37,7 @@ const VideoSection = () => {
                     </p>
                 </div>
             </div>
-            {/* <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} /> */}
+            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="geAuAp0XUIY" onClose={() => setOpen(false)} />
         </div>
 
     )

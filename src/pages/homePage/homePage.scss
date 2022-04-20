@@ -13,6 +13,7 @@
         align-items: center;
         justify-content: center;
         height: 60vw;
+        max-height: 973px;
 
         @include respond(x-large) {
             height: 70vw;
