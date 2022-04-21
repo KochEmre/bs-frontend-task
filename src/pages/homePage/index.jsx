@@ -3,6 +3,7 @@ import "./homePage.scss"
 import Button from "../../components/button/index"
 import DevicesImage from "./../../assets/images/slider-overimage.png"
 import VideoSection from '../../components/videoSection'
+import SliderSection from '../../components/sliderSection'
 
 const HomePage = () => {
   return (
@@ -22,7 +23,8 @@ const HomePage = () => {
         </div>
 
       </div>
-      <VideoSection/>
+      <VideoSection />
+      <SliderSection />
     </Fragment>
   )
 }
