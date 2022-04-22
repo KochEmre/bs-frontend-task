@@ -1,0 +1,112 @@
+@import "../..//styles/global.scss";
+
+.map-wrapper{
+    width: 100vw;
+    height: 502px;
+}
+
+.contact-page-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 940px;
+    width: 95%;
+    justify-content: space-between;
+   
+    @include respond(large) {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    } 
+
+    .contact-form-container{
+        width: 561px;
+        @include respond(medium) {
+            width: 450px;
+
+        } @include respond(small) {
+            width: 350px;
+        } 
+    }
+
+    p {
+        font-size: 14px;
+        color: #8a8888;
+        font-family: "helvetica";
+        line-height: 22px;
+        margin: 0 0 16px 0;
+
+        @include respond(small) {
+            font-size: 12px;
+            line-height: 18px;
+        } 
+    }
+
+    .dates{
+        margin: 0 0 4px 0;
+    }
+
+    span{
+        font-weight: bold;
+        margin-right: 4px;
+    }
+    
+    h3 {
+        font-size: 24px;
+        color: #8a8888;
+        font-weight: bold;
+        font-family: "novecento";
+        text-transform: uppercase;
+        margin: 50px 0 24px 0;
+    
+        @include respond(large) {
+            margin: 25px 0 15px 0;
+        } 
+    }
+
+    a{
+        text-decoration: none;
+        color: #2ecc71;
+    }
+
+    .all-contact-info{
+        display: flex;
+        flex-direction: column;
+
+        @include respond(large) {
+            flex-direction: row;
+            width: 561px;
+            justify-content: space-between;
+        } 
+        @include respond(medium) {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 450px;
+
+        } @include respond(small) {
+            width: 350px;
+        } 
+
+        .contant-info{
+            display: flex;
+            flex-direction: column;
+            width: 268px;   
+        }
+
+        .store-hours{
+            width: 268px;   
+
+            .date-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 268px;
+            }
+    
+            .days-container{
+                display: flex;
+                flex-direction: column;
+            }
+          }
+    }  
+}
+

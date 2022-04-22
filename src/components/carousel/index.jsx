@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import "./carousel.scss"
 import { ReactComponent as ArrowLeft } from '../../assets/icons/arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../../assets/icons/arrow-right.svg';
@@ -7,8 +7,6 @@ import cardData from "../../data/news-mock-data.json"
 
 
 const Carousel = () => {
-    const [slipSize, setSlipSize] = useState(0);
-    const ref = useRef(null);
 
     const slideLeft = () => {
         var slider = document.getElementById("slider");
@@ -27,7 +25,7 @@ const Carousel = () => {
                 {
                     cardData.map((data) => {
                         return (
-                            <div ref={ref} className="slider-card-container">
+                            <div className="slider-card-container">
                                 <Card key={data.id} cardData={data} />
                             </div>
                         )

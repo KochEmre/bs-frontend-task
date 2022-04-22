@@ -5,7 +5,7 @@
     width: 100%;
 
     .banner-container {
-        background-image: url('./../../assets/images/banner-background.png');
+        background-image: url('./../../assets/images/banner-background2.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         position: relative;
@@ -13,14 +13,14 @@
         align-items: center;
         justify-content: center;
         height: 60vw;
-        max-height: 973px;
+        max-height: 794px;
 
         @include respond(x-large) {
             height: 70vw;
         }
 
         @include respond(large) {
-            height: 75vw;
+            height: 85vw;
         }
 
         @include respond(medium) {
@@ -28,7 +28,7 @@
         }
 
         @include respond(small) {
-            height: 120vw;
+            height: 115vw;
         }
 
         .content-container {
@@ -38,35 +38,35 @@
             justify-content: center;
             max-width: 940px;
             width: 95%;
-            margin-bottom: 5%;
+            margin-top: 8%;
 
             @include respond(large) {
-                margin-bottom: 0;
+                margin-top: 10%;
             }
 
             @include respond(medium) {
-                margin-top: 5%;
-                margin-bottom: 0;
+                margin-top: 20%;
             }
 
             @include respond(small) {
-                margin-top: 10%;
-                margin-bottom: 0;
+                margin-top: 30%;
             }
 
             .devices {
-                width: 80%;
-
+                width: 831px;
+                height: 472px;
                 @include respond(large) {
                     width: 85%;
+                    height:auto;
                 }
 
                 @include respond(medium) {
                     width: 90%;
+
                 }
 
                 @include respond(small) {
-                    width: 100%;
+                    width: 95%;
                 }
 
             }
@@ -100,16 +100,18 @@
 
                     @include respond(large) {
                         width: 85%;
+                        font-size: 14px;
+                        line-height: 22px;
                     }
 
                     @include respond(medium) {
                         width: 90%;
-                        font-size: 14px;
                         line-height: 20px;
                     }
 
                     @include respond(small) {
                         width: 95%;
+                        font-size: 12px;
                         line-height: 18px;
 
                     }

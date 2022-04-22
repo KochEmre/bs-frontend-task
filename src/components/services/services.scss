@@ -8,6 +8,10 @@
     height: 200px;
     background-color: #efefef;
     z-index: -1;
+
+    @include respond(medium) {
+        height: 160px;
+    }
 }
 
 .service-tab-container {
@@ -29,12 +33,28 @@
         fill: #737373;
         color: #737373;
 
+        @include respond(medium) {
+            height: 160px;
+            gap: 14px;
+
+        } @include respond(small) {
+            gap: 12px;
+
+        } 
+
         .icon-wrapper {
             display: flex;
             align-items: center;
-            height: 60px;
+            svg {
+                height: 60px;
 
-            svg {}
+                @include respond(medium) {
+                    height: 50px;
+        
+                } @include respond(small) {
+                    height: 40px;
+                } 
+            }
         }
 
         span {
@@ -54,6 +74,15 @@
             font-size: 18px;
             line-height: 28px;
             font-weight: bold;
+
+            @include respond(large) {
+                font-size: 14px;
+            } 
+            @include respond(medium) {
+                font-size: 12px;
+            } @include respond(small) {
+                font-size: 10px;
+            } 
         }
 
     }

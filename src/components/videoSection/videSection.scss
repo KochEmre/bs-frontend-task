@@ -25,7 +25,7 @@
         overflow: hidden;
         gap: 28px;
 
-        @include respond(medium) {
+        @include respond(large) {
             flex-direction: column;
             gap: 25px;
         }
@@ -34,13 +34,17 @@
             position: relative;
             left: 0;
             right: 0;
-            width: 380px;
-            height: 241px;
+            width: fit-content;
 
             .video-preview {
                 position: relative;
                 top: 0;
                 left: 0;
+                max-height: 241px;
+
+                @include respond(small) {
+                    max-height: 200px;
+                }
             }
 
             .play-icon {
@@ -60,12 +64,10 @@
             justify-content: flex-start;
 
 
-            @include respond(medium) {
+            @include respond(large) {
                 align-items: center;
                 justify-content: center;
             }
-
-            @include respond(small) {}
 
             p {
                 font-size: 14px;
@@ -74,15 +76,25 @@
                 font-family: "helvetica";
                 text-align: start;
                 margin-bottom: 0;
+
+                @include respond(small) {
+                    font-size: 12px;
+                    line-height: 20px;
+
+                }
             }
 
             h3 {
                 font-size: 24px;
                 color: #8a8888;
                 font-weight: bold;
-                font-family: "Novecentowide";
+                font-family: "novecento";
                 text-transform: uppercase;
                 margin: 0;
+
+                @include respond(medium) {
+                    font-size: 20px;
+                }
             }
         }
 

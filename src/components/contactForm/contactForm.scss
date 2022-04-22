@@ -1,0 +1,96 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+
+    .input-wrapper {
+        height: 70px;
+        input {
+            width: 62.5%;
+            height: 45px;
+            background-color: #ffffff;
+            border: 2px solid #8a8888;
+            padding-left: 16px;
+
+            font-size: 14px;
+            line-height: 22px;
+            color: #8a8888;
+            font-family: "helvetica";
+
+            &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #737373;
+                opacity: 1;
+                /* Firefox */
+            }
+
+            &::-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #737373;
+            }
+
+            &::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: #737373;
+            }
+
+            &:hover {
+                border: 2px solid rgba(72, 72, 72, 0.6);
+            }
+        }
+    }
+
+    .textarea-wrapper {
+        textarea {
+            width: 90%;
+            height: 221px;
+            background-color: #ffffff;
+            border: 2px solid #8a8888;
+            padding: 15px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8a8888;
+            font-family: "helvetica";
+            resize: none;
+
+            &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #737373;
+                opacity: 1;
+                /* Firefox */
+            }
+
+            &::-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #737373;
+            }
+
+            &::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: #737373;
+            }
+
+            &:hover {
+                border: 2px solid rgba(72, 72, 72, 0.6);
+            }
+        }
+    }
+
+    .error {
+        color: #FF000080;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        margin: 1px;
+    }
+
+    .submit-wrapper {}
+
+
+}
+
+.error-class::-webkit-input-placeholder {
+    color: #b2cde0
+}

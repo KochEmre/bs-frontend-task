@@ -10,7 +10,7 @@ const AboutPage = () => {
       <PageTitle title="ABOUT MY BUSINESS" />
       <div className="about-container">
         <div className="flex-container">
-          <img src={AboutImage} alt="About" width={380} height={260} />
+          <img src={AboutImage} alt="About" className='about-image' />
           <div className="column-container">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.

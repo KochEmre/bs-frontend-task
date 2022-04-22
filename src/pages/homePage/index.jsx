@@ -24,7 +24,7 @@ const HomePage = () => {
 
       </div>
       <VideoSection />
-      <SliderSection />
+      {/* <SliderSection /> */}
     </Fragment>
   )
 }
