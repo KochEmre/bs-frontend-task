@@ -3,7 +3,7 @@ import { useForm } from '../../hooks/useForms';
 import "./contactForm.scss"
 import Button from '../button';
 
-const ContactForm = () => {
+const ContactForm = ({handleOnSubmit}) => {
     const { handleSubmit, handleChange, data, errors } = useForm({
         validations: {
             fullName: {
@@ -34,9 +34,7 @@ const ContactForm = () => {
             },
 
         },
-        onSubmit: () => { //add to local storage.
-
-        },
+        onSubmit: () => {handleOnSubmit(data)},
     });
 
     // useEffect(()=>{

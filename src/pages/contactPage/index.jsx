@@ -3,10 +3,14 @@ import ContactForm from '../../components/contactForm'
 import MarkedLocationMap from '../../components/googleMap'
 import PageTitle from '../../components/pageTitle'
 import "./contactPage.scss"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactPage = () => {
+  const handleSubmit = (data) => {toast.success("Thank you " + data.fullName + ", the message is send.")}
   return (
     <Fragment>
+      <ToastContainer position="bottom-center" theme='light' />
       <PageTitle title="Got a Question Or Inquiry?" />
       <div className="map-wrapper">
         <MarkedLocationMap />
@@ -21,7 +25,8 @@ const ContactPage = () => {
             dolor ut posuere.
           </p>
           <div className="form-wrapper">
-            <ContactForm />
+            <ContactForm handleOnSubmit={handleSubmit} />
+
           </div>
         </div>
         <div className="all-contact-info">
@@ -81,7 +86,7 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-          
+
         </div>
 
       </div>
