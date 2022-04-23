@@ -81,7 +81,7 @@ const PortFolioViewer = () => {
                     loader={<h4>Loading...</h4>}
                     endMessage={
                         <p style={{ textAlign: 'center' }}>
-                            <b>All Data is shown!</b>
+                            <b>All the data is shown!</b>
                         </p>
                     }
                 >
