@@ -1,14 +1,4 @@
 {
-  "contact": [
-    {
-      "name": "emre koc",
-      "email": "kochhemre@gmail.com",
-      "subject": "technical ",
-      "message": "test message",
-      "g-recaptcha-response": "03AGdBq25S5KZNJWweD8jUCffrz9-h1j-7Yn4LYTzVOYFvoqbEQs2--Y3FTHSi1q7dd8e-G_VzfzemqDinLhdjK8J8BD2hYVte322wXApHuLg5o2_IHpihWp0D8mmBji-qFqH7H5cBDXGaRiZgnWL89fXVipzytSp2fuCLIB7cfVDyqwjSqhcNIAJgSmUE5luDk250ms43yMF_MK8bnGVlUYrWT_jvo3zQHHcinEYl7NQGO8zRb_wh55Hne7zgtPYoBszaoKE-U-K-y6h6q7sJROCmNS2vpn896yUEU9tGYM6HekJOOO3hwdmIbuwIm8i3sZRhgkf15YrAu3ZCHG0rsA2K_r1ebZXYWInEj7NcDsGuxHzU7bP223DM-RD2dIqRZhgx978QaCigWyf89qRArpzo8OePLQHTuZxGv5oKqSZ00a-tZ5-d4Tg",
-      "id": 1
-    }
-  ],
   "projects": [
     {
       "id": 1,

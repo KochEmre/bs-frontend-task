@@ -50,7 +50,7 @@ export const useForm = (options) => {
       setErrors({});
   
       if (options?.onSubmit) {
-        options.onSubmit();
+        await options.onSubmit();
       }
     };
   

@@ -5,9 +5,15 @@ import PageTitle from '../../components/pageTitle'
 import "./contactPage.scss"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {
+  GoogleReCaptchaProvider,
+} from 'react-google-recaptcha-v3';
 
 const ContactPage = () => {
-  const handleSubmit = (data) => {toast.success("Thank you " + data.fullName + ", the message is send.")}
+  const handleFormSubmit = (data,token) => {
+    toast.success("Thank you " + data.fullName + ", the message is send.");
+    console.log(token,"contact page token");
+  }
   return (
     <Fragment>
       <ToastContainer position="bottom-center" theme='light' />
@@ -25,7 +31,9 @@ const ContactPage = () => {
             dolor ut posuere.
           </p>
           <div className="form-wrapper">
-            <ContactForm handleOnSubmit={handleSubmit} />
+            <GoogleReCaptchaProvider reCaptchaKey="6LfZyZIfAAAAADSAPt3DuM9KtlMC3OFJ6af7ddGZ">
+              <ContactForm />
+            </GoogleReCaptchaProvider>
 
           </div>
         </div>
