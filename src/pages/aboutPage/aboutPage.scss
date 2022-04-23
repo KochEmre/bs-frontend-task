@@ -32,6 +32,12 @@
         @include respond(large) {
             margin: 25px 0 15px 0;
         } 
+        @include respond(medium) {
+            font-size: 22px;
+        } 
+        @include respond(small) {
+            font-size: 20px;
+        } 
     }
 
     .flex-container{

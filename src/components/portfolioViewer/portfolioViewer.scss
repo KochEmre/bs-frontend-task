@@ -1,3 +1,5 @@
+@import "../..//styles/global.scss";
+
 .portfolio-container {
     display: flex;
     flex-direction: column;
@@ -14,6 +16,18 @@
         overflow-x: hidden;
         text-transform: uppercase;
 
+        @include respond(large) {
+            padding: 30px 0 32px;
+        }
+
+        @include respond(medium) {
+            padding: 24px 0 26px;
+        }
+
+        @include respond(small) {
+            padding: 18px 0 19px;
+        }
+
         .filter-container {
             display: flex;
             flex-direction: row;
@@ -24,8 +38,24 @@
                 color: #a5a5a5;
                 cursor: pointer;
                 margin: 0 5px;
+
+                @include respond(large) {
+                    font-size: 14px;
+                }
+
+                @include respond(medium) {
+                    font-size: 12px;
+                    margin: 0 3px;
+
+                }
+
+                @include respond(small) {
+                    font-size: 10px;
+                    margin: 0 2px;
+                }
             }
-            .backslash{
+
+            .backslash {
                 cursor: default;
             }
 
@@ -45,6 +75,18 @@
                 margin: 5px;
                 fill: #737373;
                 cursor: pointer;
+
+                @include respond(medium) {
+                    width: 14px;
+                    height: 14px;
+                    margin: 4px;
+                }
+                @include respond(small) {
+                    width: 12px;
+                    height: 12px;
+                    margin: 3px;
+
+                }
             }
 
             .active {
@@ -61,35 +103,49 @@
     .grid-wrapper {
         display: grid;
         width: 100%;
-        height: 100%;
         grid-template-columns: auto auto auto;
         gap: 18px;
 
-        div {
-            height: 200px;
-            width: 300px;
+        @include respond(large) {
+            gap: 14px;
         }
-        .background-image{
-            height: 200px;
-            width: 300px;
+
+        @include respond(medium) {
+            gap: 10px;
+        }
+
+        @include respond(small) {
+            gap: 6px;
         }
     }
 
     .list-wrapper {
         display: grid;
         width: 100%;
-        height: 100%;
         gap: 18px;
 
         div {
             width: 100%;
-            height: 200px;
         }
-        
-        .background-image{
-            width: 100%;
-            height: 200px;
+
+        @include respond(large) {
+            gap: 14px;
+        }
+
+        @include respond(medium) {
+            gap: 10px;
+        }
+
+        @include respond(small) {
+            gap: 6px;
         }
     }
 
+    .infinite-scroll-component__outerdiv {
+        width: 100%;
+    }
+
+    .infinite-scroll-component {
+        width: 100%;
+    }
 }

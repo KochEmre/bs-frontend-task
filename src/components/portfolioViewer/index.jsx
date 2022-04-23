@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./portfolioViewer.scss"
 import { ReactComponent as GridView } from '../../assets/icons/grid-view.svg';
 import { ReactComponent as ListView } from '../../assets/icons/list-view.svg';
+import InfiniteScroll from "react-infinite-scroll-component";
 
 import * as API from "../../api/index";
 import ProjectCard from '../card';
@@ -13,13 +14,18 @@ const PortFolioViewer = () => {
     const [projectList, setProjectList] = useState([]);
     const [projects, setProjects] = useState([]);
     const [currentPage, setCurrentPage] = useState(0);
+    const [hasMore, sethasMore] = useState(true);
 
     const getData = () => {
         //API.getAllProject()
         API.getProjects(currentPage, pageSize)
             .then((result) => {
-                setProjectList([...result.data]);
-                console.log(result);
+                if(result?.data.length > 0)
+                    setProjectList(projectList.concat(result.data));
+                else{
+                    //debugger;
+                    sethasMore(false);
+                }
             })
             .catch((error) => {
                 console.log(error);
@@ -30,22 +36,23 @@ const PortFolioViewer = () => {
     const handleLoadMore = () => { /* Set raw data part depend on scroll */
         setCurrentPage((previous) => previous + 1);
     };
-   
+
     useEffect(() => { /* Set raw data depend on scroll */
         getData();
     }, [currentPage]);
 
     useEffect(() => { /* Set Filter data depend on choice */
-        debugger;
+    //debugger;
+
         if (filterType === "all") {
             setProjects(projectList);
-          return;
+            return;
         }
         const filteredData = projectList.filter((item) => {
-          return item.categories.includes(filterType);
+            return item.categories.includes(filterType);
         });
         setProjects(filteredData);
-      }, [projectList, filterType]);
+    }, [projectList, filterType]);
 
     return (
         <div className="portfolio-container">
@@ -67,17 +74,30 @@ const PortFolioViewer = () => {
                 </div>
             </div>
             {projects.length > 0 ? (
-            <div className={`${viewType}-wrapper`}>
-                {projects.map((project)=>{
-                    return (
-                        <ProjectCard imageUrl={project.imageUrl}/>
-                    )               
-                })}
-            </div>
-            ):
-            (
-                <span>No Result</span>
-            )}
+                <InfiniteScroll
+                    dataLength={projects.length} //This is important field to render the next data
+                    next={handleLoadMore}
+                    hasMore={hasMore}
+                    loader={<h4>Loading...</h4>}
+                    endMessage={
+                        <p style={{ textAlign: 'center' }}>
+                            <b>All Data is shown!</b>
+                        </p>
+                    }
+                >
+                    <div className={`${viewType}-wrapper`}>
+
+                        {projects.map((project) => {
+                            return (
+                                <ProjectCard key={project?.id} imageUrl={project.imageUrl} />
+                            )
+                        })}
+                    </div>
+                </InfiniteScroll>
+            ) :
+                (
+                    <span>No Result</span>
+                )}
         </div>
     )
 }

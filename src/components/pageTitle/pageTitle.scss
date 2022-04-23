@@ -10,11 +10,11 @@
     text-transform: uppercase;
 
     @include respond(medium) {
+        height: 80px;
     }
-
     @include respond(small) {
+        height: 60px;
     }
-
     .title-wrapper{
         max-width: 940px;
         width: 95%;
@@ -25,6 +25,16 @@
             font-size: 30px;
             color: #ffffff;
             font-weight: bold;
+
+            @include respond(large) {
+                font-size: 26px;
+            }
+            @include respond(medium) {
+                font-size: 22px;
+            }
+            @include respond(small) {
+                font-size: 16px;
+            }
         }
         
     }

@@ -1,11 +1,12 @@
+@import "../..//styles/global.scss";
+
 .form-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 5px;
+    gap: 20px;
 
     .input-wrapper {
-        height: 70px;
         input {
             width: 62.5%;
             height: 45px;
@@ -17,6 +18,16 @@
             line-height: 22px;
             color: #8a8888;
             font-family: "helvetica";
+
+            @include respond(medium) {
+                height: 41px;
+                line-height: 20px;
+            }
+            @include respond(small) {
+                height: 36px;
+                font-size: 12px;
+                line-height: 18px;
+            }
 
             &::placeholder {
                 /* Chrome, Firefox, Opera, Safari 10.1+ */
