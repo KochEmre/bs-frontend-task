@@ -1,7 +1,8 @@
 import React from 'react'
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import { ReactComponent as MarkerIcon } from '../../assets/icons/marker.svg';
 import "./googleMap.scss"
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import MarkerImage from "./../../assets/images/marker.png"
+ 
 
 const containerStyle = {
   width: '100%',
@@ -14,25 +15,39 @@ const center = {
 };
 
 function MarkedLocationMap() {
-  return (
-    <LoadScript
-      googleMapsApiKey=""
-    >
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: ""
+  })
+
+  const [map, setMap] = React.useState(null)
+
+  const onLoad = React.useCallback(function callback(map) {
+    // const bounds = new window.google.maps.LatLngBounds();
+    // map.fitBounds(bounds);
+    // setMap(map)
+  }, [])
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, [])
+
+  return isLoaded ? (
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={18}
+        zoom={17}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
       >
-        {/*TODO: Marker is not working. Why ? */}
-        {/* <Marker
+        { /* Child components, such as markers, info windows, etc. */ }
+        <Marker
           position={center}
-          zoom={18}
-          icon={MarkerIcon}
-
-        /> */}
+          icon={MarkerImage}
+        />
+        <></>
       </GoogleMap>
-    </LoadScript>
-  )
+  ) : <></>
 }
 
 export default React.memo(MarkedLocationMap)
