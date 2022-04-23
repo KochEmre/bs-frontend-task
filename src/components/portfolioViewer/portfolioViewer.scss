@@ -63,11 +63,15 @@
         width: 100%;
         height: 100%;
         grid-template-columns: auto auto auto;
-        gap: 10px;
+        gap: 18px;
 
         div {
-            height: 50px;
-            background-color: blue;
+            height: 200px;
+            width: 300px;
+        }
+        .background-image{
+            height: 200px;
+            width: 300px;
         }
     }
 
@@ -75,12 +79,16 @@
         display: grid;
         width: 100%;
         height: 100%;
-        gap: 10px;
+        gap: 18px;
 
         div {
             width: 100%;
-            height: 50px;
-            background-color: blue;
+            height: 200px;
+        }
+        
+        .background-image{
+            width: 100%;
+            height: 200px;
         }
     }
 
