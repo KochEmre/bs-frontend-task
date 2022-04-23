@@ -8,6 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import {
   GoogleReCaptchaProvider,
 } from 'react-google-recaptcha-v3';
+import { Helmet } from "react-helmet";
+
 
 const ContactPage = () => {
   const handleFormSubmit = (data,token) => {
@@ -15,7 +17,7 @@ const ContactPage = () => {
     console.log(token,"contact page token");
   }
   return (
-    <Fragment>
+    <Fragment>     
       <ToastContainer position="bottom-center" theme='light' />
       <PageTitle title="Got a Question Or Inquiry?" />
       <div className="map-wrapper">
@@ -23,6 +25,24 @@ const ContactPage = () => {
         {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11780.461821395507!2d19.2388991!3d42.4252773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x896347752287c4b2!2sBild%20Studio!5e0!3m2!1str!2str!4v1650552201698!5m2!1str!2str"  width="100%" height="100%" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
       </div>
       <div className="contact-page-container">
+      <Helmet>
+        <title>Contact - Display</title>
+        <meta name="description" content="Find all the best quality products you may need" />        
+        <meta name="twitter:card" content="summary_large_image" />        
+        <meta name="twitter:site" content="@user" />        
+        <meta name="twitter:creator" content="@user" />        
+        <meta name="twitter:title" content="Twitter - Display" />        
+        <meta name="twitter:description" content="Best Products for your job" />        
+        <meta name="twitter:image" content="url_to_image"/>        
+        <meta property="og:title" content="Contact - Display" />        
+        <meta property="og:description" content="Best Products for your job" />        
+        <meta property="og:image" content="url_to_image" />
+        <meta property="og:url" content="display.abc" />
+        <meta property="og:site_name" content="Display" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="fb:app_id" content="ID_APP_FACEBOOK" />
+      </Helmet>
         <div className="contact-form-container">
           <h3>Contact Form</h3>
           <p>
