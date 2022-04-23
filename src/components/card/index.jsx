@@ -2,7 +2,7 @@ import './card.scss';
 import MockImage from "./../../assets/images/portfolio-1.png"
 import LinkButton from "./../../assets/images/link-button.png"
 
-const Card = ({ cardData }) => {
+const ProjectCard = ({ cardData }) => {
   const { imageUrl } = cardData;
   return (
     <div className="card-wrapper">
@@ -14,4 +14,4 @@ const Card = ({ cardData }) => {
   );
 };
 
-export default Card;
+export default ProjectCard;

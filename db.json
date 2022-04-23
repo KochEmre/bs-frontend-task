@@ -1,71 +1,66 @@
 {
-  "projects": [
+  "project-preview": [
     {
       "id": 1,
-      "img": "/src/assets/images/portfolio-1.png",
-      "title": "Dolore magna",
+      "imageUrl": "/src/assets/images/portfolio-1.png",
+      "title": "Dark UI KIT FREEBIE",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 2,
-      "img": "/src/assets/images/portfolio-2.png",
-      "title": "Eget est lorem",
+      "imageUrl": "/src/assets/images/portfolio-2.png",
+      "title": "Social Media Projects",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 3,
-      "img": "/src/assets/images/portfolio-3.png",
-      "title": "Tempus imperdiet",
+      "imageUrl": "/src/assets/images/portfolio-3.png",
+      "title": "Sport Websites",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 4,
-      "img": "/src/assets/images/portfolio-4.png",
+      "imageUrl": "/src/assets/images/portfolio-4.png",
       "title": "Mattis rhoncus",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 5,
-      "img": "/src/assets/images/portfolio-5.png",
+      "imageUrl": "/src/assets/images/portfolio-5.png",
       "title": "Odio ut enim",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 6,
-      "img": "/src/assets/images/portfolio-6.png",
+      "imageUrl": "/src/assets/images/portfolio-6.png",
       "title": "Dolore magna",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 7,
-      "img": "/src/assets/images/portfolio-7.png",
+      "imageUrl": "/src/assets/images/portfolio-7.png",
       "title": "Eget est lorem",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 8,
-      "img": "/src/assets/images/portfolio-8.png",
+      "imageUrl": "/src/assets/images/portfolio-8.png",
       "title": "Tempus imperdiet",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 9,
-      "img": "/src/assets/images/portfolio-9.png",
+      "imageUrl": "/src/assets/images/portfolio-9.png",
       "title": "Mattis rhoncus",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
-    },
-    {
-      "id": 10,
-      "img": "/src/assets/images/portfolio-1.png",
-      "title": "Odio ut enim",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     }
   ],
-  "works": [
+
+  "project": [
     {
       "id": 1,
-      "img": "/src/assets/images/portfolio-1.png",
-      "title": "Dolore magna",
+      "imageUrl": "/src/assets/images/portfolio-1.png",
+      "title": "Dark UI KIT FREEBIE",
       "categories": [
         "print",
         "photography"
@@ -74,8 +69,8 @@
     },
     {
       "id": 2,
-      "img": "/src/assets/images/portfolio-2.png",
-      "title": "Eget est lorem",
+      "imageUrl": "/src/assets/images/portfolio-2.png",
+      "title": "Social Media Projects",
       "categories": [
         "print",
         "web"
@@ -84,8 +79,8 @@
     },
     {
       "id": 3,
-      "img": "/src/assets/images/portfolio-3.png",
-      "title": "Tempus imperdiet",
+      "imageUrl": "/src/assets/images/portfolio-3.png",
+      "title": "Sport Websites",
       "categories": [
         "web"
       ],
@@ -93,7 +88,7 @@
     },
     {
       "id": 4,
-      "img": "/src/assets/images/portfolio-4.png",
+      "imageUrl": "/src/assets/images/portfolio-4.png",
       "title": "Mattis rhoncus",
       "categories": [
         "print",
@@ -103,7 +98,7 @@
     },
     {
       "id": 5,
-      "img": "/src/assets/images/portfolio-5.png",
+      "imageUrl": "/src/assets/images/portfolio-5.png",
       "title": "Odio ut enim",
       "categories": [
         "print",
@@ -114,22 +109,22 @@
     },
     {
       "id": 6,
-      "img": "/src/assets/images/portfolio-6.png",
-      "title": "Odio ut enim",
+      "imageUrl": "/src/assets/images/portfolio-6.png",
+      "title": "Dolore magna",
       "categories": [],
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 7,
-      "img": "/src/assets/images/portfolio-7.png",
-      "title": "Odio ut enim",
+      "imageUrl": "/src/assets/images/portfolio-7.png",
+      "title": "Eget est lorem",
       "categories": [],
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 8,
-      "img": "/src/assets/images/portfolio-8.png",
-      "title": "Odio ut enim",
+      "imageUrl": "/src/assets/images/portfolio-8.png",
+      "title": "Tempus imperdiet",
       "categories": [
         "print",
         "web",
@@ -139,7 +134,7 @@
     },
     {
       "id": 9,
-      "img": "/src/assets/images/portfolio-9.png",
+      "imageUrl": "/src/assets/images/portfolio-9.png",
       "title": "Odio ut enim",
       "categories": [
         "print",
@@ -149,29 +144,29 @@
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
-      "id": 10,
-      "img": "/src/assets/images/portfolio-1.png",
-      "title": "Dolore magna",
+    "id": 10,
+      "imageUrl": "/src/assets/images/portfolio-1.png",
+      "title": "Dark UI KIT FREEBIE",
       "categories": [
         "print",
-        "web"
+        "photography"
       ],
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 11,
-      "img": "/src/assets/images/portfolio-2.png",
-      "title": "Eget est lorem",
+      "imageUrl": "/src/assets/images/portfolio-2.png",
+      "title": "Social Media Projects",
       "categories": [
         "print",
-        "photography"
+        "web"
       ],
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 12,
-      "img": "/src/assets/images/portfolio-3.png",
-      "title": "Tempus imperdiet",
+      "imageUrl": "/src/assets/images/portfolio-3.png",
+      "title": "Sport Websites",
       "categories": [
         "web"
       ],
@@ -179,7 +174,7 @@
     },
     {
       "id": 13,
-      "img": "/src/assets/images/portfolio-4.png",
+      "imageUrl": "/src/assets/images/portfolio-4.png",
       "title": "Mattis rhoncus",
       "categories": [
         "print",
@@ -189,7 +184,7 @@
     },
     {
       "id": 14,
-      "img": "/src/assets/images/portfolio-5.png",
+      "imageUrl": "/src/assets/images/portfolio-5.png",
       "title": "Odio ut enim",
       "categories": [
         "print",
@@ -200,22 +195,22 @@
     },
     {
       "id": 15,
-      "img": "/src/assets/images/portfolio-6.png",
-      "title": "Odio ut enim",
+      "imageUrl": "/src/assets/images/portfolio-6.png",
+      "title": "Dolore magna",
       "categories": [],
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 16,
-      "img": "/src/assets/images/portfolio-7.png",
-      "title": "Odio ut enim",
+      "imageUrl": "/src/assets/images/portfolio-7.png",
+      "title": "Eget est lorem",
       "categories": [],
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
       "id": 17,
-      "img": "/src/assets/images/portfolio-8.png",
-      "title": "Odio ut enim",
+      "imageUrl": "/src/assets/images/portfolio-8.png",
+      "title": "Tempus imperdiet",
       "categories": [
         "print",
         "web",
@@ -225,7 +220,7 @@
     },
     {
       "id": 18,
-      "img": "/src/assets/images/portfolio-9.png",
+      "imageUrl": "/src/assets/images/portfolio-9.png",
       "title": "Odio ut enim",
       "categories": [
         "print",
@@ -233,28 +228,158 @@
         "photography"
       ],
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "title": "all"
     },
     {
-      "id": 2,
-      "title": "print"
+      "id": 19,
+      "imageUrl": "/src/assets/images/portfolio-2.png",
+      "title": "Social Media Projects",
+      "categories": [
+        "print",
+        "web"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
-      "id": 3,
-      "title": "photography"
+      "id": 20,
+      "imageUrl": "/src/assets/images/portfolio-3.png",
+      "title": "Sport Websites",
+      "categories": [
+        "web"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
-      "id": 4,
-      "title": "web"
+      "id": 21,
+      "imageUrl": "/src/assets/images/portfolio-4.png",
+      "title": "Mattis rhoncus",
+      "categories": [
+        "print",
+        "web"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     },
     {
-      "id": 5,
-      "title": "applications"
+      "id": 22,
+      "imageUrl": "/src/assets/images/portfolio-5.png",
+      "title": "Odio ut enim",
+      "categories": [
+        "print",
+        "web",
+        "photography"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 23,
+      "imageUrl": "/src/assets/images/portfolio-6.png",
+      "title": "Dolore magna",
+      "categories": [],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 24,
+      "imageUrl": "/src/assets/images/portfolio-7.png",
+      "title": "Eget est lorem",
+      "categories": [],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 25,
+      "imageUrl": "/src/assets/images/portfolio-8.png",
+      "title": "Tempus imperdiet",
+      "categories": [
+        "print",
+        "web",
+        "photography"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 26,
+      "imageUrl": "/src/assets/images/portfolio-9.png",
+      "title": "Odio ut enim",
+      "categories": [
+        "print",
+        "web",
+        "photography"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 27,
+      "imageUrl": "/src/assets/images/portfolio-2.png",
+      "title": "Social Media Projects",
+      "categories": [
+        "print",
+        "web"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 28,
+      "imageUrl": "/src/assets/images/portfolio-3.png",
+      "title": "Sport Websites",
+      "categories": [
+        "web"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 29,
+      "imageUrl": "/src/assets/images/portfolio-4.png",
+      "title": "Mattis rhoncus",
+      "categories": [
+        "print",
+        "web"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 30,
+      "imageUrl": "/src/assets/images/portfolio-5.png",
+      "title": "Odio ut enim",
+      "categories": [
+        "print",
+        "web",
+        "photography"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 31,
+      "imageUrl": "/src/assets/images/portfolio-6.png",
+      "title": "Dolore magna",
+      "categories": [],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 32,
+      "imageUrl": "/src/assets/images/portfolio-7.png",
+      "title": "Eget est lorem",
+      "categories": [],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 33,
+      "imageUrl": "/src/assets/images/portfolio-8.png",
+      "title": "Tempus imperdiet",
+      "categories": [
+        "print",
+        "web",
+        "photography"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+    },
+    {
+      "id": 34,
+      "imageUrl": "/src/assets/images/portfolio-9.png",
+      "title": "Odio ut enim",
+      "categories": [
+        "print",
+        "web",
+        "photography"
+      ],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
     }
   ]
 }
