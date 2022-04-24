@@ -1,40 +1,45 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
 import "./carousel.scss"
-import { ReactComponent as ArrowLeft } from '../../assets/icons/arrow-left.svg';
-import { ReactComponent as ArrowRight } from '../../assets/icons/arrow-right.svg';
-import Card from '../card';
-import cardData from "../../data/news-mock-data.json"
+import CaroselBottom from "./carouselBottom";
+import ProjectCard from "../card";
 
+function Carousel({ projectList }) {
+  const [activeCard, setActiveCard] = useState(0);
 
-const Carousel = () => {
+  return (
+    // carousel bottom component
+    <Splide
+      onActive={(slide) => {
+        setActiveCard(slide.index+1);
+      }}
+      hasTrack={false}
+      options={{
+        type: "loop",
+        perPage: 4,
+        focus: "center",
+        gap: "1%",
+        pagination: false,
+      }}
+    >
+      <div className='custom-wrapper'>
+        <SplideTrack>
+          {projectList.map((project) => {
+            return (
+              <SplideSlide>
+                <ProjectCard key={project?.id} imageUrl={project.imageUrl} />
+              </SplideSlide>
+            )
+          })}
+        </SplideTrack>
 
-    const slideLeft = () => {
-        var slider = document.getElementById("slider");
-        slider.scrollLeft = slider.scrollLeft - 500;
-    }
-
-    const slideRight = () => {
-        var slider = document.getElementById("slider");
-        slider.scrollLeft = slider.scrollLeft + 500;
-    }
-
-    return (
-        <div id="main-slider-container">
-            <ArrowLeft onClick={slideLeft} />
-            <div id="slider">
-                {
-                    cardData.map((data) => {
-                        return (
-                            <div className="slider-card-container">
-                                <Card key={data.id} cardData={data} />
-                            </div>
-                        )
-                    })
-                }
-            </div>
-            <ArrowRight onClick={slideRight} />
+        <div className='splide__arrows'>
+          <CaroselBottom details={projectList.filter(project=>project.id === activeCard)}/>
         </div>
-    )
+      </div>
+    </Splide>
+  );
 }
 
-export default Carousel
+export default Carousel;

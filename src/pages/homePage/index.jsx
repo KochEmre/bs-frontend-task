@@ -5,6 +5,7 @@ import DevicesImage from "./../../assets/images/slider-overimage.png"
 import VideoSection from '../../components/videoSection'
 import SliderSection from '../../components/sliderSection'
 import { Helmet } from "react-helmet";
+import Carousel from '../../components/carousel'
 
 
 const HomePage = () => {
@@ -44,7 +45,7 @@ const HomePage = () => {
 
       </div>
       <VideoSection />
-      {/* <SliderSection /> */}
+      <SliderSection />
     </Fragment>
   )
 }

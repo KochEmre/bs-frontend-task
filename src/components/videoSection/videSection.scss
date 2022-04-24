@@ -69,33 +69,7 @@
                 justify-content: center;
             }
 
-            p {
-                font-size: 14px;
-                line-height: 22px;
-                color: #8a8888;
-                font-family: "helvetica";
-                text-align: start;
-                margin-bottom: 0;
-
-                @include respond(small) {
-                    font-size: 12px;
-                    line-height: 20px;
-
-                }
-            }
-
-            h3 {
-                font-size: 24px;
-                color: #8a8888;
-                font-weight: bold;
-                font-family: "novecento";
-                text-transform: uppercase;
-                margin: 0;
-
-                @include respond(medium) {
-                    font-size: 20px;
-                }
-            }
+            
         }
 
     }
@@ -107,4 +81,32 @@
     width: 100%;
     max-width: 32rem;
     min-height: 200;
+}
+
+p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8a8888;
+    font-family: "helvetica";
+    text-align: start;
+    margin-bottom: 0;
+
+    @include respond(small) {
+        font-size: 12px;
+        line-height: 20px;
+
+    }
+}
+
+h3 {
+    font-size: 24px;
+    color: #8a8888;
+    font-weight: bold;
+    font-family: "novecento";
+    text-transform: uppercase;
+    margin: 0;
+
+    @include respond(medium) {
+        font-size: 20px;
+    }
 }

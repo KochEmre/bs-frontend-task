@@ -9,15 +9,15 @@
 		left: 0;
 		max-height: 200px;
 		width: 100%;
-		height: 100%;  
-		object-fit: cover;     
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.link-button {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		height: 50%;       
+		height: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 1;
 		cursor: pointer;
@@ -25,12 +25,13 @@
 
 	}
 
-	&:hover{
-		.link-button{
+	&:hover {
+		.link-button {
 			display: block;
 		}
-		.background-image{
-			filter: brightness(0.5);
+
+		.background-image {
+			filter: brightness(0.7);
 
 		}
 	}

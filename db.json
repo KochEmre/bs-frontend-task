@@ -8,7 +8,7 @@
         "print",
         "photography"
       ],
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis. 1"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
         "print",
         "web"
       ],
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis. 2"
     },
     {
       "id": 3,
@@ -27,7 +27,7 @@
       "categories": [
         "web"
       ],
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis. 3"
     },
     {
       "id": 4,
@@ -37,7 +37,7 @@
         "print",
         "web"
       ],
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis. 4"
     },
     {
       "id": 5,
@@ -48,21 +48,21 @@
         "web",
         "photography"
       ],
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis. 5"
     },
     {
       "id": 6,
       "imageUrl": "/assets/images/portfolio-6.png",
       "title": "Dolore magna",
       "categories": [],
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis. 6"
     },
     {
       "id": 7,
       "imageUrl": "/assets/images/portfolio-7.png",
       "title": "Eget est lorem",
       "categories": [],
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis. 7"
     },
     {
       "id": 8,
@@ -73,7 +73,7 @@
         "web",
         "photography"
       ],
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis. 8"
     },
     {
       "id": 9,
@@ -84,7 +84,7 @@
         "web",
         "photography"
       ],
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis. 9"
     },
     {
     "id": 10,

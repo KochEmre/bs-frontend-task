@@ -54,6 +54,8 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
+  width: auto;
+  overflow-y: hidden;
+  
   background-color: var(--bg-color);
 }
