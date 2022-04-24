@@ -10,13 +10,13 @@ npm install -g json-server
 npm install
 ```
 
-4. Run JSON / Backend Server
+3. Run JSON / Backend Server
 
 ```
 npm run server
 ```
 
-5. Start Application
+4. Start Application
 
 ```
 npm start
