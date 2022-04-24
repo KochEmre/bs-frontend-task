@@ -28,14 +28,14 @@ function Carousel({ projectList }) {
           {projectList.map((project) => {
             return (
               <SplideSlide>
-                <ProjectCard key={project?.id} imageUrl={project.imageUrl} />
+                <ProjectCard key={project?.id} imageUrl={project?.imageUrl} />
               </SplideSlide>
             )
           })}
         </SplideTrack>
 
         <div className='splide__arrows'>
-          <CaroselBottom details={projectList.filter(project=>project.id === activeCard)}/>
+          <CaroselBottom details={projectList.filter(project=>project?.id === activeCard)}/>
         </div>
       </div>
     </Splide>
